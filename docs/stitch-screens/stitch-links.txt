@@ -1,0 +1,60 @@
+# Audex Stitch UI Links
+
+Use these Google Stitch designs as the visual source of truth for the Audex website.
+
+Important:
+- If the coding agent cannot open these links, export screenshots from Stitch and save them in:
+  docs/stitch-screens/
+- Keep screenshots named exactly as:
+  01-home.png
+  02-about.png
+  03-platform.png
+  04-consulting.png
+  05-industries.png
+  06-intelligence-center.png
+  07-contact.png
+
+---
+
+## 01 — Home Page UI
+https://stitch.withgoogle.com/projects/14582598156150961269
+
+## 02 — About Us Page UI
+https://stitch.withgoogle.com/preview/10012816645524549592?node-id=a1fd340bd42c4241958f53a22ffae6f6
+
+## 03 — Platform as a Service Page UI
+https://stitch.withgoogle.com/preview/10012816645524549592?node-id=a1fd340bd42c4241958f53a22ffae6f6
+
+## 04 — Consulting Services Page UI
+https://stitch.withgoogle.com/preview/9552703371832541773?node-id=f66f8bfbd560468e81d712e6f311d60e
+
+## 05 — Industries Page UI
+https://stitch.withgoogle.com/preview/11810590033417654857?node-id=6d8132fe0aab45e5aca9d259e3e8d61d
+
+## 06 — Intelligence Center Page UI
+https://stitch.withgoogle.com/preview/4144641528944070648?node-id=32fe8869aa76447bb1e7ae89f7f00a46
+
+## 07 — Contact Page UI
+https://stitch.withgoogle.com/preview/3878763272787436393?node-id=7e950f69d318434a963b4aa39346a9ab
+
+---
+
+## Instruction for AI Coding Agent
+
+These Stitch links define the UI direction. Match:
+- Layout
+- Spacing
+- Section order
+- Typography scale
+- Cards
+- Buttons
+- Colors
+- Hero style
+- Mobile responsiveness
+
+Do not invent a completely different design.
+
+If links do not open:
+1. Ask user to export screenshots from Stitch.
+2. Use screenshots from docs/stitch-screens/.
+3. Continue implementation using docs/context.md and available screenshots.
