@@ -17,10 +17,9 @@ Important:
 ---
 
 ## 01 — Home Page UI
-https://stitch.withgoogle.com/projects/14582598156150961269
+https://stitch.withgoogle.com/preview/10012816645524549592?node-id=a1fd340bd42c4241958f53a22ffae6f6
 
 ## 02 — About Us Page UI
-https://stitch.withgoogle.com/preview/10012816645524549592?node-id=a1fd340bd42c4241958f53a22ffae6f6
 
 ## 03 — Platform as a Service Page UI
 https://stitch.withgoogle.com/preview/10012816645524549592?node-id=a1fd340bd42c4241958f53a22ffae6f6
