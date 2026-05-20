@@ -1,4 +1,5 @@
 import { ArrowRight, BookOpenText, FileBarChart2 } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { CTASection } from '../components/sections/CTASection'
 import { HeroSection } from '../components/sections/HeroSection'
 import { SectionHeader } from '../components/sections/SectionHeader'
@@ -46,22 +47,25 @@ export function IntelligenceCenterPage() {
           />
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {insightCards.map((item) => (
-              <Card key={item} className="h-full bg-deepsea/5 border-deepsea/10">
-                <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/10 text-blue">
-                  <BookOpenText className="h-5 w-5 text-blue" strokeWidth={2.5} />
+              <Card key={item.id} className="h-full bg-deepsea/5 border-deepsea/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/10 text-blue">
+                    <BookOpenText className="h-5 w-5 text-blue" strokeWidth={2.5} />
+                  </div>
+                  <h3 className="mt-6 font-display text-[20px] font-semibold tracking-[-0.03em] text-deepsea leading-snug line-clamp-2">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-[13px] leading-relaxed text-deepsea/80 line-clamp-3">
+                    {item.summary}
+                  </p>
                 </div>
-                <h3 className="mt-6 font-display text-[24px] font-semibold tracking-[-0.03em] text-deepsea">
-                  {item}
-                </h3>
-                <p className="mt-4 text-[14px] leading-7 text-deepsea/80">
-                  Operator-grade analysis on logistics cost reduction, freight
-                  billing control, technology execution, and enterprise margin
-                  implications.
-                </p>
-                <p className="mt-6 inline-flex items-center gap-2 text-[14px] font-semibold text-blue">
+                <Link
+                  to={`/insights/${item.id}`}
+                  className="mt-6 inline-flex items-center gap-2 text-[14px] font-semibold text-blue hover:text-deepsea transition-colors"
+                >
                   Read preview
                   <ArrowRight className="h-4 w-4" />
-                </p>
+                </Link>
               </Card>
             ))}
           </div>
@@ -78,17 +82,25 @@ export function IntelligenceCenterPage() {
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {caseStudyCards.map((item) => (
-              <Card key={item} className="h-full bg-deepsea/5 border-deepsea/10">
-                <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/10 text-blue">
-                  <FileBarChart2 className="h-5 w-5 text-blue" strokeWidth={2.5} />
+              <Card key={item.id} className="h-full bg-deepsea/5 border-deepsea/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/10 text-blue">
+                    <FileBarChart2 className="h-5 w-5 text-blue" strokeWidth={2.5} />
+                  </div>
+                  <h3 className="mt-6 font-display text-[20px] font-semibold tracking-[-0.03em] text-deepsea leading-snug">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-[13px] leading-relaxed text-deepsea/80 line-clamp-3">
+                    {item.problem}
+                  </p>
                 </div>
-                <h3 className="mt-6 font-display text-[24px] font-semibold tracking-[-0.03em] text-deepsea">
-                  {item}
-                </h3>
-                <p className="mt-4 text-[14px] leading-7 text-deepsea/80">
-                  Presented as a static proof-point card for launch, ready to be
-                  expanded into a fuller editorial case study later.
-                </p>
+                <Link
+                  to={`/case-studies/${item.id}`}
+                  className="mt-6 inline-flex items-center gap-2 text-[14px] font-semibold text-blue hover:text-deepsea transition-colors"
+                >
+                  Read Case Study
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
               </Card>
             ))}
           </div>

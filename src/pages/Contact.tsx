@@ -49,7 +49,7 @@ export function ContactPage() {
             <p className="text-[12px] font-bold uppercase tracking-[0.28em] text-blue">
               Contact details
             </p>
-            <div className="mt-5 space-y-3 text-sm leading-7 text-deepsea/76">
+            <div className="mt-5 space-y-3 text-sm leading-7 text-deepsea/76 lining-nums">
               <p className="font-semibold text-deepsea">
                 AUDEX LOGISTIC LABS PRIVATE LIMITED
               </p>

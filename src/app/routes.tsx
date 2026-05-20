@@ -7,6 +7,7 @@ import { ContactPage } from '../pages/Contact'
 import { HomePage } from '../pages/Home'
 import { IndustriesPage } from '../pages/Industries'
 import { IntelligenceCenterPage } from '../pages/IntelligenceCenter'
+import { ArticleReaderPage } from '../pages/ArticleReader'
 import { NotFoundPage } from '../pages/NotFound'
 import { PlatformPage } from '../pages/Platform'
 
@@ -35,6 +36,8 @@ export function AppRoutes() {
             path="/intelligence-center"
             element={<IntelligenceCenterPage />}
           />
+          <Route path="/insights/:id" element={<ArticleReaderPage />} />
+          <Route path="/case-studies/:id" element={<ArticleReaderPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFoundPage />} />

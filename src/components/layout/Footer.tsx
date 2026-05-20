@@ -48,7 +48,7 @@ export function Footer() {
           <p className="text-xs font-bold uppercase tracking-[0.28em] text-[var(--color-blue)]">
             Contact
           </p>
-          <div className="space-y-3 text-sm text-deepsea/80">
+          <div className="space-y-3 text-sm text-deepsea/80 lining-nums">
             <p className="font-semibold text-deepsea">
               AUDEX LOGISTIC LABS PRIVATE LIMITED
             </p>

@@ -5,6 +5,7 @@ import { ArchitectureFlow } from '../components/sections/ArchitectureFlow'
 import { PerformanceCharts } from '../components/sections/PerformanceCharts'
 import { PlatformCTA } from '../components/sections/PlatformCTA'
 import { TrustSection } from '../components/sections/TrustSection'
+import { ClientTicker } from '../components/sections/ClientTicker'
 import { homeIntelligenceModules } from '../data/home'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
 import { motion } from 'framer-motion'
@@ -66,6 +67,9 @@ export function HomePage() {
 
       {/* 2. Trust / Proof Bar */}
       <TrustSection />
+
+      {/* Client Logo scrolling bar */}
+      <ClientTicker />
 
       {/* 3. Core Intelligence Modules */}
       <section className="py-24 bg-white">
