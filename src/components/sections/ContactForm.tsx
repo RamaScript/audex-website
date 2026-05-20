@@ -243,7 +243,7 @@ export function ContactForm({ sourcePage }: ContactFormProps) {
           onChange={handleChange}
           className="mt-1 h-4 w-4 rounded border-deepsea/10 text-blue focus:ring-blue"
         />
-        <span className="text-sm leading-6 text-deepsea/70">
+        <span className="text-sm leading-6 text-deepsea/80">
           I consent to Audex contacting me about diagnostics, freight audits,
           demos, or consulting support.
         </span>

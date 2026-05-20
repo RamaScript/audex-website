@@ -53,7 +53,7 @@ export function Header() {
                 className={`relative px-3.5 py-2 text-[13px] font-semibold tracking-[0.05em] uppercase rounded-[2px] transition-colors duration-200 ${
                   isActive
                     ? 'text-deepsea'
-                    : 'text-deepsea/50 hover:text-deepsea hover:bg-deepsea/4'
+                    : 'text-deepsea/70 hover:text-deepsea hover:bg-deepsea/4'
                 }`}
               >
                 {item.label}
@@ -73,7 +73,7 @@ export function Header() {
         <div className="hidden lg:flex items-center gap-3">
           <NavLink
             to="/contact"
-            className="text-[13px] font-semibold text-deepsea/50 hover:text-deepsea tracking-[0.05em] uppercase transition-colors px-3 py-2"
+            className="text-[13px] font-semibold text-deepsea/70 hover:text-deepsea tracking-[0.05em] uppercase transition-colors px-3 py-2"
           >
             Contact
           </NavLink>

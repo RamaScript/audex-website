@@ -28,7 +28,7 @@ export function IntelligenceCenterPage() {
             <p className="mt-5 text-3xl font-semibold tracking-[-0.04em]">
               Static insight and case-study cards first. CMS later if needed.
             </p>
-            <p className="mt-4 text-base leading-8 text-deepsea/72">
+            <p className="mt-4 text-[14px] leading-8 text-deepsea/80">
               The first release focuses on strong editorial presentation without
               adding a content backend the project did not ask for.
             </p>
@@ -47,13 +47,13 @@ export function IntelligenceCenterPage() {
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {insightCards.map((item) => (
               <Card key={item} className="h-full bg-deepsea/5 border-deepsea/10">
-                <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/20 text-sky">
-                  <BookOpenText className="h-5 w-5" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/10 text-blue">
+                  <BookOpenText className="h-5 w-5 text-blue" strokeWidth={2.5} />
                 </div>
                 <h3 className="mt-6 font-display text-[24px] font-semibold tracking-[-0.03em] text-deepsea">
                   {item}
                 </h3>
-                <p className="mt-4 text-[14px] leading-7 text-deepsea/70">
+                <p className="mt-4 text-[14px] leading-7 text-deepsea/80">
                   Operator-grade analysis on logistics cost reduction, freight
                   billing control, technology execution, and enterprise margin
                   implications.
@@ -79,13 +79,13 @@ export function IntelligenceCenterPage() {
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {caseStudyCards.map((item) => (
               <Card key={item} className="h-full bg-deepsea/5 border-deepsea/10">
-                <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/20 text-sky">
-                  <FileBarChart2 className="h-5 w-5" />
+                <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/10 text-blue">
+                  <FileBarChart2 className="h-5 w-5 text-blue" strokeWidth={2.5} />
                 </div>
                 <h3 className="mt-6 font-display text-[24px] font-semibold tracking-[-0.03em] text-deepsea">
                   {item}
                 </h3>
-                <p className="mt-4 text-[14px] leading-7 text-deepsea/70">
+                <p className="mt-4 text-[14px] leading-7 text-deepsea/80">
                   Presented as a static proof-point card for launch, ready to be
                   expanded into a fuller editorial case study later.
                 </p>

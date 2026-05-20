@@ -61,10 +61,10 @@ export function MapVisualization() {
           transition={{ duration: 0.5, delay: i * 0.1 }}
         >
           <div className="relative">
-            <div className="h-2 w-2 rounded-full bg-manilla" />
-            <div className="absolute inset-0 h-2 w-2 animate-ping rounded-full bg-sky/50" />
+            <div className="h-2 w-2 rounded-full bg-blue" />
+            <div className="absolute inset-0 h-2 w-2 animate-ping rounded-full bg-blue/30" />
           </div>
-          <span className="font-mono text-[10px] tracking-widest text-deepsea/40 uppercase">
+          <span className="font-mono text-[10px] tracking-widest text-deepsea/65 uppercase">
             {node.label}
           </span>
         </motion.div>
@@ -72,11 +72,11 @@ export function MapVisualization() {
 
       {/* Hero Overlay Info */}
       <div className="absolute bottom-6 left-6 font-mono">
-        <div className="flex items-center gap-2 text-[10px] tracking-[0.2em] text-manilla">
-          <div className="h-1.5 w-1.5 rounded-full bg-manilla animate-pulse" />
+        <div className="flex items-center gap-2 text-[10px] tracking-[0.2em] text-blue">
+          <div className="h-1.5 w-1.5 rounded-full bg-blue animate-pulse" />
           SYSTEM_ONLINE
         </div>
-        <div className="mt-1 text-[10px] text-deepsea/30 tracking-widest">
+        <div className="mt-1 text-[10px] text-deepsea/55 tracking-widest">
           LATENCY: 42MS // NODES: 8,241
         </div>
       </div>

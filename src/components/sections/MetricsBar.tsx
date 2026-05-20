@@ -22,12 +22,11 @@ export function MetricsBar({ items, tone = 'light' }: MetricsBarProps) {
   const valueClassName =
     tone === 'dark' ? 'text-deepsea' : 'text-deepsea'
 
-  const labelClassName =
-    tone === 'dark' ? 'text-deepsea/68' : 'text-deepsea/70'
+  const labelClassName = 'text-deepsea/80'
 
   const iconClassName =
     tone === 'dark'
-      ? 'border-deepsea/10 bg-white/8 text-sky'
+      ? 'border-deepsea/10 bg-blue/10 text-blue'
       : 'border-deepsea/10 bg-deepsea/5 text-blue'
 
   return (

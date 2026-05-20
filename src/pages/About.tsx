@@ -126,7 +126,7 @@ export function AboutPage() {
                     <h3 className="mt-5 font-display text-[17px] font-bold tracking-[-0.02em] text-deepsea">
                       {value.title}
                     </h3>
-                    <p className="mt-2 text-[13px] leading-6 text-deepsea/60">
+                    <p className="mt-2 text-[13px] leading-6 text-deepsea/80">
                       {value.description}
                     </p>
                   </div>
@@ -180,7 +180,7 @@ export function AboutPage() {
                     {leader.points.map((point) => (
                       <li
                         key={point}
-                        className="flex items-start gap-3 text-[14px] leading-6 text-deepsea/65"
+                        className="flex items-start gap-3 text-[14px] leading-6 text-deepsea/80"
                       >
                         <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-blue)]" />
                         <span>{point}</span>
@@ -227,7 +227,7 @@ export function AboutPage() {
               <p className="mt-4 font-display text-[26px] font-bold tracking-[-0.04em] text-deepsea leading-tight">
                 20+ years of operator context before any algorithm is applied.
               </p>
-              <p className="mt-4 text-[14px] leading-7 text-deepsea/60">
+              <p className="mt-4 text-[14px] leading-7 text-deepsea/80">
                 That depth shapes how diagnostics are framed, how interventions are
                 prioritised, and how technology is made to work in real logistics
                 environments.

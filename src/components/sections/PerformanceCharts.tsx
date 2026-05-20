@@ -50,7 +50,7 @@ const kpis = [
     suffix: '%',
     label: 'Shipment ETA Accuracy',
     detail: 'Predictive arrival precision across modes',
-    barColor: 'bg-sky',
+    barColor: 'bg-blue',
     barWidth: '94%',
     trend: '2× industry average accuracy',
   },
@@ -60,7 +60,7 @@ const kpis = [
     suffix: '%',
     label: 'Freight Spend Recovered',
     detail: 'Per engagement, identifies hidden overspend',
-    barColor: 'bg-manilla',
+    barColor: 'bg-blue',
     barWidth: '60%',
     trend: 'Max per engagement cycle',
   },
@@ -112,7 +112,7 @@ export function PerformanceCharts() {
             <h3 className="font-display text-[14px] font-semibold text-deepsea mb-1">
               {kpi.label}
             </h3>
-            <p className="text-[12px] text-deepsea/50 mb-5">{kpi.detail}</p>
+            <p className="text-[12px] text-deepsea/75 mb-5">{kpi.detail}</p>
 
             {/* Progress Bar */}
             <div className="h-1.5 w-full rounded-full bg-deepsea/6 overflow-hidden mb-3">
@@ -126,7 +126,7 @@ export function PerformanceCharts() {
             </div>
 
             {/* Trend */}
-            <p className="flex items-center gap-1 text-[11px] font-mono text-deepsea/40 tracking-wide">
+            <p className="flex items-center gap-1 text-[11px] font-mono text-deepsea/65 tracking-wide">
               <TrendingUp size={10} className="text-blue/60" />
               {kpi.trend}
             </p>

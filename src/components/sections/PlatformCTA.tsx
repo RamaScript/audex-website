@@ -32,10 +32,10 @@ export function PlatformCTA() {
           </div>
 
           {/* Headline */}
-          <h2 className="font-display text-[34px] md:text-[58px] font-bold tracking-tight text-white mb-6 leading-[1.05]">
+          <h2 className="font-display text-[34px] md:text-[58px] font-light tracking-tight text-white mb-6 leading-[1.05]">
             Logistics is not a cost center.
             <br />
-            <span className="text-manilla">It is margin.</span>
+            <span className="text-manilla font-light">It is margin.</span>
           </h2>
 
           {/* Sub */}

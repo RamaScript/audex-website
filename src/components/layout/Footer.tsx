@@ -11,7 +11,7 @@ export function Footer() {
       <Container className="grid gap-12 py-16 lg:grid-cols-[1.2fr_0.8fr_0.9fr]">
         <div className="space-y-5">
           <Logo variant="dark" />
-          <p className="max-w-xl text-sm leading-7 text-deepsea/70 sm:text-base">
+          <p className="max-w-xl text-sm leading-7 text-deepsea/80 sm:text-base">
             Audex helps enterprises detect hidden logistics leakages, recover
             freight costs, improve supply chain visibility, and build smarter
             logistics systems through consulting, technology, and intelligence.
@@ -28,7 +28,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.28em] text-deepsea/48">
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.28em] text-[var(--color-blue)]">
             Navigation
           </p>
           <div className="grid gap-3 text-sm">
@@ -36,7 +36,7 @@ export function Footer() {
               <NavLink
                 key={item.href}
                 to={item.href}
-                className="text-deepsea/70 transition hover:text-deepsea"
+                className="text-deepsea/80 transition hover:text-deepsea"
               >
                 {item.label}
               </NavLink>
@@ -48,20 +48,20 @@ export function Footer() {
           <p className="text-xs font-bold uppercase tracking-[0.28em] text-[var(--color-blue)]">
             Contact
           </p>
-          <div className="space-y-3 text-sm text-deepsea/70">
+          <div className="space-y-3 text-sm text-deepsea/80">
             <p className="font-semibold text-deepsea">
               AUDEX LOGISTIC LABS PRIVATE LIMITED
             </p>
             <p className="flex items-start gap-3">
-              <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-sky)]" />
+              <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-blue)]" />
               <span className="break-all">mitesh@audexglobal.com / vishwesh@audexglobal.com / askus@audexglobal.com</span>
             </p>
             <p className="flex items-start gap-3">
-              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-sky)]" />
+              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-blue)]" />
               <span>+91 98843 00076 / +91 99400 12674</span>
             </p>
             <div className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-sky)]" />
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-blue)]" />
               <div className="space-y-2">
                 <p>Marketing office: The Executive Zone, Shakti towers, Spencer plaza, Chennai - 600002</p>
                 <p>Development office: A6 3rd floor, PM towers, Chennai-600089</p>

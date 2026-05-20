@@ -29,7 +29,7 @@ export function IndustriesPage() {
               Each operating environment changes what control and visibility must
               look like.
             </p>
-            <p className="mt-4 text-base leading-8 text-deepsea/72">
+            <p className="mt-4 text-[14px] leading-8 text-deepsea/80">
               Audex shapes workflows around regulated cold chains, store
               replenishment, production schedules, e-commerce returns, or LSP
               finance and compliance models as needed.

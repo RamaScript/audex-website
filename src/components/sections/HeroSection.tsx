@@ -37,10 +37,10 @@ export function HeroSection({
           transition={{ duration: 0.55, ease: 'easeOut' }}
           className="relative z-10"
         >
-          <p className="inline-flex rounded-[2px] border border-deepsea/10 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-sky">
+          <p className="inline-flex rounded-[2px] border border-deepsea/10 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-blue">
             {eyebrow}
           </p>
-          <h1 className="mt-6 max-w-4xl font-display text-[32px] md:text-[48px] font-semibold tracking-[-0.05em] text-deepsea lg:text-[4.4rem] lg:leading-[0.95]">
+          <h1 className="mt-6 max-w-4xl font-display text-[32px] md:text-[48px] font-light tracking-[-0.05em] text-deepsea lg:text-[4.4rem] lg:leading-[0.95]">
             {title}
           </h1>
           <p className="mt-6 max-w-2xl text-[14px] leading-8 text-deepsea/70 sm:text-[16px]">

@@ -38,7 +38,7 @@ export function PlatformCard({
         {title}
       </h3>
 
-      <p className="text-[13px] leading-relaxed text-deepsea/60">
+      <p className="text-[13px] leading-relaxed text-deepsea/80">
         {description}
       </p>
 

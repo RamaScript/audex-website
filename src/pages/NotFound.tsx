@@ -14,10 +14,10 @@ export function NotFoundPage() {
         <p className="text-xs font-bold uppercase tracking-[0.32em] text-[var(--color-sky)]">
           404
         </p>
-        <h1 className="mt-5 font-[var(--font-display)] text-4xl font-semibold tracking-[-0.05em] sm:text-5xl">
+        <h1 className="mt-5 font-[var(--font-display)] text-4xl font-light tracking-[-0.05em] sm:text-5xl">
           This route is outside the current Audex map.
         </h1>
-        <p className="mt-5 max-w-2xl text-base leading-8 text-deepsea/72">
+        <p className="mt-5 max-w-2xl text-base leading-8 text-deepsea/80">
           Return to the homepage or continue to the contact page to begin a
           diagnostic conversation.
         </p>

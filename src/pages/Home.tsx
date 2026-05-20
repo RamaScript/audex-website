@@ -20,7 +20,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
       className="flex items-center justify-center gap-3 mb-5"
     >
       <div className="h-px w-10 bg-deepsea/15" />
-      <span className="font-mono text-[10px] tracking-[0.15em] text-deepsea/40 uppercase">
+      <span className="font-mono text-[10px] tracking-[0.15em] text-blue font-semibold uppercase">
         {children}
       </span>
       <div className="h-px w-10 bg-deepsea/15" />
@@ -36,7 +36,7 @@ function SectionHeading({ title, subtitle }: { title: React.ReactNode; subtitle:
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="font-display text-[32px] md:text-[40px] font-bold tracking-tight text-deepsea leading-[1.1]"
+        className="font-display text-[32px] md:text-[40px] font-light tracking-tight text-deepsea leading-[1.1]"
       >
         {title}
       </motion.h2>
@@ -45,7 +45,7 @@ function SectionHeading({ title, subtitle }: { title: React.ReactNode; subtitle:
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="mt-4 text-[14px] leading-relaxed text-deepsea/55 max-w-lg"
+        className="mt-4 text-[14px] leading-relaxed text-deepsea/80 max-w-lg"
       >
         {subtitle}
       </motion.p>

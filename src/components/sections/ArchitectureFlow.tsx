@@ -46,7 +46,7 @@ export function ArchitectureFlow() {
               className={`flex-1 rounded-[2px] border border-deepsea/8 bg-gradient-to-br ${step.color} p-7 relative overflow-hidden group hover:shadow-[0_16px_48px_rgba(7,93,239,0.08)] transition-all duration-300 hover:-translate-y-1`}
             >
               {/* Step number */}
-              <span className="absolute top-4 right-5 font-mono text-[10px] text-deepsea/25 tracking-widest">
+              <span className="absolute top-4 right-5 font-mono text-[10px] text-deepsea/60 tracking-widest">
                 {step.sublabel}
               </span>
 
@@ -61,7 +61,7 @@ export function ArchitectureFlow() {
               <h3 className="font-display text-[15px] font-semibold text-deepsea mb-2">
                 {step.label}
               </h3>
-              <p className="text-[13px] leading-relaxed text-deepsea/60">
+              <p className="text-[13px] leading-relaxed text-deepsea/80">
                 {step.description}
               </p>
             </motion.div>
@@ -76,7 +76,7 @@ export function ArchitectureFlow() {
                 className="flex flex-col items-center mx-[-1px] z-10"
               >
                 <div className="w-8 h-px bg-deepsea/15 relative">
-                  <ArrowRight size={14} className="absolute -right-1.5 -top-[7px] text-deepsea/30" />
+                  <ArrowRight size={14} className="absolute -right-1.5 -top-[7px] text-deepsea/60" />
                 </div>
               </motion.div>
             )}
@@ -96,14 +96,14 @@ export function ArchitectureFlow() {
             className={`relative rounded-[2px] border border-deepsea/8 bg-gradient-to-br ${step.color} p-6 overflow-hidden`}
           >
             <div className={`absolute top-0 left-0 bottom-0 w-[3px] ${step.accentLine}`} />
-            <span className="font-mono text-[10px] text-deepsea/30 tracking-widest mb-3 block">
+            <span className="font-mono text-[10px] text-deepsea/60 tracking-widest mb-3 block">
               {step.sublabel}
             </span>
             <div className={`flex h-10 w-10 items-center justify-center rounded-[2px] border ${step.iconBg} mb-4`}>
               <step.icon size={18} />
             </div>
             <h3 className="font-display text-[14px] font-semibold text-deepsea mb-1.5">{step.label}</h3>
-            <p className="text-[13px] leading-relaxed text-deepsea/60">{step.description}</p>
+            <p className="text-[13px] leading-relaxed text-deepsea/80">{step.description}</p>
           </motion.div>
         ))}
       </div>

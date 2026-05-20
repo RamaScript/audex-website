@@ -126,7 +126,7 @@ export function PlatformPage() {
             className="inline-flex items-center gap-2.5 rounded-full border border-deepsea/10 bg-white px-4 py-1.5 shadow-sm"
           >
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[var(--color-blue)]" />
-            <span className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-deepsea/50">
+            <span className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-blue">
               Enterprise Platform
             </span>
           </motion.div>
@@ -135,17 +135,17 @@ export function PlatformPage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.05 }}
-            className="max-w-4xl font-display text-[42px] font-bold leading-tight tracking-[-0.04em] text-deepsea sm:text-[56px] lg:text-[72px] lg:leading-[0.95]"
+            className="max-w-4xl font-display text-[42px] font-light leading-tight tracking-[-0.04em] text-deepsea sm:text-[56px] lg:text-[72px] lg:leading-[0.95]"
           >
             Platform Intelligence for{' '}
-            <span className="text-[var(--color-blue)]">Enterprise Logistics.</span>
+            <span className="text-[var(--color-blue)] font-light">Enterprise Logistics.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="max-w-2xl text-[17px] leading-8 text-deepsea/60"
+            className="max-w-2xl text-[17px] leading-8 text-deepsea/80"
           >
             Centralize transport, warehouse, freight, and operational visibility through a
             unified enterprise logistics intelligence ecosystem.
@@ -264,13 +264,13 @@ export function PlatformPage() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-[15px] leading-7 text-deepsea/60">{mod.description}</p>
+                  <p className="text-[15px] leading-7 text-deepsea/80">{mod.description}</p>
 
                   {/* Stats */}
                   <div className="mt-auto flex gap-8 border-t border-deepsea/6 pt-6">
                     {mod.stats.map((s) => (
                       <div key={s.label} className="flex flex-col gap-1">
-                        <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-deepsea/40">
+                        <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-deepsea/70">
                           {s.label}
                         </span>
                         <span className="font-display text-[22px] font-bold text-deepsea">
@@ -336,7 +336,7 @@ export function PlatformPage() {
                       </p>
                       <p
                         className={`mt-1.5 text-[14px] leading-6 ${
-                          layer.highlight ? 'text-white/75' : 'text-deepsea/55'
+                          layer.highlight ? 'text-white/75' : 'text-deepsea/80'
                         }`}
                       >
                         {layer.description}
@@ -365,7 +365,7 @@ export function PlatformPage() {
                 <div className="h-2.5 w-2.5 rounded-full bg-deepsea/15" />
                 <div className="h-2.5 w-2.5 rounded-full bg-deepsea/15" />
                 <div className="h-2.5 w-2.5 rounded-full bg-deepsea/15" />
-                <span className="ml-3 text-[11px] font-mono text-deepsea/30">
+                <span className="ml-3 text-[11px] font-mono text-deepsea/60">
                   audex-control-tower / live
                 </span>
               </div>
@@ -377,22 +377,48 @@ export function PlatformPage() {
               </div>
               {/* Fake charts */}
               <div className="mt-6 grid grid-cols-2 gap-4">
-                {[65, 40].map((h, i) => (
+                {[
+                  {
+                    line: "M 0 70 Q 25 50 50 65 T 100 25",
+                    area: "M 0 70 Q 25 50 50 65 T 100 25 L 100 100 L 0 100 Z"
+                  },
+                  {
+                    line: "M 0 60 Q 25 80 50 40 T 100 15",
+                    area: "M 0 60 Q 25 80 50 40 T 100 15 L 100 100 L 0 100 Z"
+                  }
+                ].map((chart, i) => (
                   <div
                     key={i}
-                    className="relative flex h-32 items-end overflow-hidden rounded-[2px] border border-deepsea/8 bg-white p-3"
+                    className="relative h-32 overflow-hidden rounded-[2px] border border-deepsea/8 bg-white"
                   >
-                    <div
-                      className="w-full rounded-t-[2px] bg-gradient-to-t from-[var(--color-blue)] to-[var(--color-sky)]/40"
-                      style={{ height: `${h}%` }}
-                    />
+                    <svg className="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id={`grad-${i}`} x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stopColor="#075DEF" stopOpacity="0.25" />
+                          <stop offset="100%" stopColor="#075DEF" stopOpacity="0" />
+                        </linearGradient>
+                      </defs>
+                      {/* Area Fill */}
+                      <path d={chart.area} fill={`url(#grad-${i})`} />
+                      {/* Line */}
+                      <motion.path
+                        d={chart.line}
+                        fill="none"
+                        stroke="#075DEF"
+                        strokeWidth="2"
+                        initial={{ pathLength: 0 }}
+                        whileInView={{ pathLength: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.2, delay: i * 0.2, ease: 'easeOut' }}
+                      />
+                    </svg>
                   </div>
                 ))}
               </div>
               {/* Live indicator */}
               <div className="mt-5 flex items-center gap-2">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
-                <span className="text-[11px] font-mono text-deepsea/40">
+                <span className="text-[11px] font-mono text-deepsea/70">
                   All systems operational
                 </span>
               </div>
@@ -428,7 +454,7 @@ export function PlatformPage() {
                     <p className="font-display text-[28px] font-bold text-[var(--color-blue)]">
                       {metric.peak}
                     </p>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-deepsea/40">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-deepsea/70">
                       {metric.peakLabel}
                     </p>
                   </div>
@@ -462,7 +488,7 @@ export function PlatformPage() {
                   {metric.labels.map((label) => (
                     <span
                       key={label}
-                      className="flex-1 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-deepsea/35"
+                      className="flex-1 text-center text-[10px] font-bold uppercase tracking-[0.12em] text-deepsea/65"
                     >
                       {label}
                     </span>

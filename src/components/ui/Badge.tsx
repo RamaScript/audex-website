@@ -8,9 +8,9 @@ type BadgeProps = {
 export function Badge({ children, tone = 'blue' }: BadgeProps) {
   const toneClassName =
     tone === 'manilla'
-      ? 'bg-manilla/10 text-manilla'
+      ? 'bg-manilla/20 text-[#a3781a]'
       : tone === 'sky'
-        ? 'bg-sky/10 text-sky'
+        ? 'bg-sky/30 text-blue'
         : 'bg-blue/10 text-blue'
 
   return (

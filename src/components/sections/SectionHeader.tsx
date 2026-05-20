@@ -15,8 +15,8 @@ export function SectionHeader({
 }: SectionHeaderProps) {
   const alignmentClassName = align === 'center' ? 'mx-auto text-center' : ''
   const eyebrowColor = light ? 'text-sky' : 'text-blue'
-  const titleColor = light ? 'text-deepsea' : 'text-deepsea'
-  const descriptionColor = light ? 'text-deepsea/72' : 'text-slate'
+  const titleColor = 'text-deepsea'
+  const descriptionColor = 'text-deepsea/80'
 
   return (
     <div className={`max-w-3xl ${alignmentClassName}`}>
@@ -24,7 +24,7 @@ export function SectionHeader({
         {eyebrow}
       </p>
       <h2
-        className={`mt-4 font-display text-3xl font-bold tracking-[-0.04em] sm:text-4xl lg:text-[3rem] ${titleColor}`}
+        className={`mt-4 font-display text-3xl font-light tracking-[-0.04em] sm:text-4xl lg:text-[3rem] ${titleColor}`}
       >
         {title}
       </h2>

@@ -48,12 +48,12 @@ export function PlatformHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-display text-[44px] md:text-[68px] lg:text-[76px] font-bold tracking-[-0.03em] leading-[1.02] text-deepsea"
+            className="font-display text-[44px] md:text-[68px] lg:text-[76px] font-light tracking-[-0.03em] leading-[1.02] text-deepsea"
           >
             Precision Visibility.{' '}
             <br className="hidden md:block" />
             <span className="relative inline-block">
-              <span className="relative z-10 text-blue">Measurable Margin.</span>
+              <span className="relative z-10 text-blue font-light">Measurable Margin.</span>
               <span className="absolute -bottom-1 left-0 right-0 h-[3px] bg-manilla" />
             </span>
           </motion.h1>
@@ -63,7 +63,7 @@ export function PlatformHero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mx-auto mt-7 max-w-2xl text-[16px] leading-relaxed text-deepsea/65 font-body"
+            className="mx-auto mt-7 max-w-2xl text-[16px] leading-relaxed text-deepsea/80 font-body"
           >
             AUDEx connects global supply chain visibility with autonomous control layers —
             transforming raw logistics data into measurable margin recovery for enterprise operations.
@@ -97,7 +97,7 @@ export function PlatformHero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="mt-6 text-[12px] text-deepsea/40 font-mono tracking-wide"
+            className="mt-6 text-[12px] text-deepsea/70 font-mono tracking-wide"
           >
             No commitment required &nbsp;·&nbsp; Used by enterprise logistics leaders across India &amp; MENA
           </motion.p>
@@ -121,7 +121,7 @@ export function PlatformHero() {
               <span className="font-display text-[36px] md:text-[42px] font-bold tracking-tight text-deepsea group-hover:text-blue transition-colors">
                 {stat.value}{stat.suffix}
               </span>
-              <span className="mt-1 text-[12px] text-deepsea/50 uppercase tracking-[0.06em] font-mono text-center">
+              <span className="mt-1 text-[12px] text-blue uppercase tracking-[0.06em] font-mono font-semibold text-center">
                 {stat.label}
               </span>
             </motion.div>

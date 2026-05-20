@@ -39,7 +39,7 @@ export function ConsultingPage() {
               <p className="text-3xl font-semibold tracking-[-0.04em]">
                 Diagnose first. Then intervene with precision.
               </p>
-              <p className="text-base leading-8 text-deepsea/74">
+              <p className="text-base leading-8 text-deepsea/80">
                 Audex combines network design, operational control, and freight
                 intelligence so the improvement plan is financially grounded from
                 the start.
@@ -87,8 +87,8 @@ export function ConsultingPage() {
 
               return (
                 <Card key={step.title} className="h-full bg-deepsea/5 border-deepsea/10">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/20 text-sky">
-                    <Icon className="h-5 w-5" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/10 text-blue">
+                    <Icon className="h-5 w-5 text-blue" strokeWidth={2.5} />
                   </div>
                   <p className="mt-6 text-[12px] font-bold uppercase tracking-[0.28em] text-blue">
                     {step.label}
@@ -117,7 +117,7 @@ export function ConsultingPage() {
             <ul className="grid gap-4 sm:grid-cols-2">
               {operationalOptimisation.map((item) => (
                 <li key={item} className="flex gap-3 rounded-[1.25rem] border border-deepsea/10 bg-deepsea/5 p-4">
-                  <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-sky" />
+                  <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-blue" />
                   <span>{item}</span>
                 </li>
               ))}

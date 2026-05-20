@@ -40,7 +40,7 @@ export function Logo({ variant = 'dark' }: LogoProps) {
       ) : null}
       {(!source || sourceIndex > 0) && variant !== 'vertical' ? (
         <span
-          className={`font-[var(--font-display)] text-xl font-extrabold tracking-[0.2em] ${
+          className={`font-[var(--font-display)] text-xl font-light tracking-[0.2em] ${
             variant === 'light' ? 'text-white' : 'text-[var(--color-navy)]'
           }`}
         >

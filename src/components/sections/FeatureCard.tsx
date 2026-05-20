@@ -16,7 +16,7 @@ export function FeatureCard({
   title,
   description,
   bullets,
-  accent = 'manilla',
+  accent = 'blue',
 }: FeatureCardProps) {
   const accentClass =
     accent === 'manilla'
@@ -40,14 +40,14 @@ export function FeatureCard({
         <h3 className="mt-6 font-display text-[24px] font-bold tracking-[-0.03em] text-deepsea">
           {title}
         </h3>
-        <p className="mt-4 text-[14px] leading-7 text-deepsea/70 sm:text-[16px]">
+        <p className="mt-4 text-[14px] leading-7 text-deepsea/80 sm:text-[16px]">
           {description}
         </p>
         {bullets && bullets.length > 0 ? (
           <ul className="mt-5 space-y-3 text-[14px] text-deepsea/80">
             {bullets.map((bullet) => (
               <li key={bullet} className="flex gap-3">
-                <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-manilla" />
+                <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-blue" />
                 <span>{bullet}</span>
               </li>
             ))}

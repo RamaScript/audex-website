@@ -37,10 +37,10 @@ export function CTASection({
           <div className="absolute inset-0 -z-10 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
           
           <div className="relative z-10 max-w-3xl">
-            <p className="text-xs font-bold uppercase tracking-[0.32em] text-sky">
+            <p className="text-xs font-bold uppercase tracking-[0.32em] text-blue">
               {eyebrow}
             </p>
-            <h2 className="mt-6 font-display text-3xl font-bold tracking-[-0.04em] sm:text-4xl lg:text-[3.5rem] lg:leading-[1.1]">
+            <h2 className="mt-6 font-display text-3xl font-light tracking-[-0.04em] sm:text-4xl lg:text-[3.5rem] lg:leading-[1.1]">
               {title}
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-8 text-deepsea/70 sm:text-lg">

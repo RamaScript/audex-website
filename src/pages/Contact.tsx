@@ -46,7 +46,7 @@ export function ContactPage() {
 
         aside={
           <Card className="border-deepsea/10 bg-deepsea/5 text-deepsea shadow-none">
-            <p className="text-[12px] font-bold uppercase tracking-[0.28em] text-sky">
+            <p className="text-[12px] font-bold uppercase tracking-[0.28em] text-blue">
               Contact details
             </p>
             <div className="mt-5 space-y-3 text-sm leading-7 text-deepsea/76">
@@ -81,13 +81,13 @@ export function ContactPage() {
 
               return (
                 <Card key={option.title} className="h-full bg-deepsea/5 border-deepsea/10">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/20 text-sky">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-blue/10 text-blue">
                     <Icon className="h-5 w-5" />
                   </div>
                   <h3 className="mt-6 font-display text-[24px] font-semibold tracking-[-0.03em] text-deepsea">
                     {option.title}
                   </h3>
-                  <p className="mt-4 text-[14px] leading-7 text-deepsea/70">
+                  <p className="mt-4 text-[14px] leading-7 text-deepsea/80">
                     {option.description}
                   </p>
                 </Card>
