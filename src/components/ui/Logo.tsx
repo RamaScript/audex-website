@@ -6,15 +6,15 @@ type LogoProps = {
 
 const sources = {
   light: [
-    `${import.meta.env.BASE_URL}assets/logos/horizontal-format.png`,
-    `${import.meta.env.BASE_URL}assets/logos/main_logo.png`,
+    `${import.meta.env.BASE_URL}media/logos/horizontal-format.png`,
+    `${import.meta.env.BASE_URL}media/logos/main_logo.png`,
   ],
   dark: [
-    `${import.meta.env.BASE_URL}assets/logos/blue_color_logo.png`,
-    `${import.meta.env.BASE_URL}assets/logos/black_color_logo.png`,
+    `${import.meta.env.BASE_URL}media/logos/blue_color_logo.png`,
+    `${import.meta.env.BASE_URL}media/logos/black_color_logo.png`,
   ],
   vertical: [
-    `${import.meta.env.BASE_URL}assets/logos/vertical_format.png`,
+    `${import.meta.env.BASE_URL}media/logos/vertical_format.png`,
   ],
 }
 
