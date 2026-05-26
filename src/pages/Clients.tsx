@@ -3,29 +3,35 @@ import { Container } from '../components/ui/Container'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
 import { CTASection } from '../components/sections/CTASection'
 
+const getImageUrl = (path: string) => {
+  const base = import.meta.env.BASE_URL || '/';
+  // Ensure we don't have double slashes
+  return `${base.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
+}
+
 const discreteClients = [
-  '/media/images/clients/Discrete manufacturing/renault-nissan-logo.jpg',
-  '/media/images/clients/Discrete manufacturing/L_and_T_Infotech.png',
-  '/media/images/clients/Discrete manufacturing/Saint-Gobain-Logo.jpg',
-  '/media/images/clients/Discrete manufacturing/praxair.png',
-  '/media/images/clients/Discrete manufacturing/pernod-ricard.jpg',
-  '/media/images/clients/Discrete manufacturing/lucas.jpg',
-  '/media/images/clients/Discrete manufacturing/SL_lumax.jpg',
-  '/media/images/clients/Discrete manufacturing/kanishk_group.png',
+  getImageUrl('/media/images/clients/Discrete manufacturing/renault-nissan-logo.jpg'),
+  getImageUrl('/media/images/clients/Discrete manufacturing/L_and_T_Infotech.png'),
+  getImageUrl('/media/images/clients/Discrete manufacturing/Saint-Gobain-Logo.jpg'),
+  getImageUrl('/media/images/clients/Discrete manufacturing/praxair.png'),
+  getImageUrl('/media/images/clients/Discrete manufacturing/pernod-ricard.jpg'),
+  getImageUrl('/media/images/clients/Discrete manufacturing/lucas.jpg'),
+  getImageUrl('/media/images/clients/Discrete manufacturing/SL_lumax.jpg'),
+  getImageUrl('/media/images/clients/Discrete manufacturing/kanishk_group.png'),
 ]
 
 const logisticsClients = [
-  '/media/images/clients/logistics logo/Nippon_Express.jpg',
-  '/media/images/clients/logistics logo/Balmer-Lawrie-Logistics.webp',
-  '/media/images/clients/logistics logo/concor.png',
-  '/media/images/clients/logistics logo/Hyundai_Glovis.png',
-  '/media/images/clients/logistics logo/ilfs.png',
-  '/media/images/clients/logistics logo/transportation.png',
-  '/media/images/clients/logistics logo/APM-TERMINALS.jpg',
-  '/media/images/clients/logistics logo/yusen.png',
-  '/media/images/clients/logistics logo/sgl_logo.png',
-  '/media/images/clients/logistics logo/iriway.png',
-  '/media/images/clients/logistics logo/eastern_and_central_community_trust.png',
+  getImageUrl('/media/images/clients/logistics logo/Nippon_Express.jpg'),
+  getImageUrl('/media/images/clients/logistics logo/Balmer-Lawrie-Logistics.webp'),
+  getImageUrl('/media/images/clients/logistics logo/concor.png'),
+  getImageUrl('/media/images/clients/logistics logo/Hyundai_Glovis.png'),
+  getImageUrl('/media/images/clients/logistics logo/ilfs.png'),
+  getImageUrl('/media/images/clients/logistics logo/transportation.png'),
+  getImageUrl('/media/images/clients/logistics logo/APM-TERMINALS.jpg'),
+  getImageUrl('/media/images/clients/logistics logo/yusen.png'),
+  getImageUrl('/media/images/clients/logistics logo/sgl_logo.png'),
+  getImageUrl('/media/images/clients/logistics logo/iriway.png'),
+  getImageUrl('/media/images/clients/logistics logo/eastern_and_central_community_trust.png'),
 ]
 
 const categories = [
