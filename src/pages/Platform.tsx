@@ -379,10 +379,16 @@ export function PlatformPage() {
               <div className="mt-6 grid grid-cols-2 gap-4">
                 {[
                   {
+                    title: "Active Nodes",
+                    value: "8,492",
+                    trend: "+12%",
                     line: "M 0 70 Q 25 50 50 65 T 100 25",
                     area: "M 0 70 Q 25 50 50 65 T 100 25 L 100 100 L 0 100 Z"
                   },
                   {
+                    title: "Network Latency",
+                    value: "12ms",
+                    trend: "-8%",
                     line: "M 0 60 Q 25 80 50 40 T 100 15",
                     area: "M 0 60 Q 25 80 50 40 T 100 15 L 100 100 L 0 100 Z"
                   }
@@ -391,7 +397,32 @@ export function PlatformPage() {
                     key={i}
                     className="relative h-32 overflow-hidden rounded-[2px] border border-deepsea/8 bg-white"
                   >
+                    {/* Data overlay */}
+                    <div className="absolute left-3 top-3 z-10 pointer-events-none">
+                      <div className="text-[10px] font-bold uppercase tracking-[0.1em] text-deepsea/50">
+                        {chart.title}
+                      </div>
+                      <div className="flex items-baseline gap-2 mt-0.5">
+                        <div className="font-display text-xl font-bold text-deepsea">
+                          {chart.value}
+                        </div>
+                        <div className={`text-[10px] font-bold ${chart.trend.startsWith('+') ? 'text-green-500' : 'text-[var(--color-blue)]'}`}>
+                          {chart.trend}
+                        </div>
+                      </div>
+                    </div>
+
                     <svg className="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                      {/* Grid lines */}
+                      <g stroke="currentColor" className="text-deepsea/[0.04]" strokeWidth="0.5">
+                        <line x1="0" y1="25" x2="100" y2="25" />
+                        <line x1="0" y1="50" x2="100" y2="50" />
+                        <line x1="0" y1="75" x2="100" y2="75" />
+                        <line x1="25" y1="0" x2="25" y2="100" />
+                        <line x1="50" y1="0" x2="50" y2="100" />
+                        <line x1="75" y1="0" x2="75" y2="100" />
+                      </g>
+
                       <defs>
                         <linearGradient id={`grad-${i}`} x1="0" y1="0" x2="0" y2="1">
                           <stop offset="0%" stopColor="#075DEF" stopOpacity="0.25" />

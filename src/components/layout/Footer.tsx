@@ -54,7 +54,7 @@ export function Footer() {
             </p>
             <p className="flex items-start gap-3">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-blue)]" />
-              <span className="break-all">mitesh@audexglobal.com / vishwesh@audexglobal.com / askus@audexglobal.com</span>
+              <span className="break-all">mitesh@audexglobal.com / vishwesh_p@audexglobal.com / askus@audexglobal.com</span>
             </p>
             <p className="flex items-start gap-3">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[var(--color-blue)]" />

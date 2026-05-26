@@ -25,7 +25,7 @@ const fadeUp = {
 }
 
 const contactEmails: Record<string, string> = {
-  'Vishwesh Pakhare': 'vishwesh@audexglobal.com',
+  'Vishwesh Pakhare': 'vishwesh_p@audexglobal.com',
   'Mitesh Bhandari': 'mitesh@audexglobal.com',
 }
 

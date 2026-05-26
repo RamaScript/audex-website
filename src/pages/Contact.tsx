@@ -54,7 +54,7 @@ export function ContactPage() {
                 AUDEX LOGISTIC LABS PRIVATE LIMITED
               </p>
               <p>mitesh@audexglobal.com</p>
-              <p>vishwesh@audexglobal.com</p>
+              <p>vishwesh_p@audexglobal.com</p>
               <p>askus@audexglobal.com</p>
               <p>+91 98843 00076 / +91 99400 12674</p>
               <p>www.audexglobal.com</p>
