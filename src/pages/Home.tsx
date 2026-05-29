@@ -56,8 +56,8 @@ function SectionHeading({ title, subtitle }: { title: React.ReactNode; subtitle:
 
 export function HomePage() {
   useDocumentMeta(
-    'AUDEx | Platform Intelligence & Logistics Control',
-    'AUDEx connects global supply chain visibility with autonomous control layers, transforming raw logistics data into measurable margin recovery.',
+    'Audex | Platform Intelligence & Logistics Control',
+    'Audex connects global supply chain visibility with autonomous control layers, transforming raw logistics data into measurable margin recovery.',
   )
 
   return (

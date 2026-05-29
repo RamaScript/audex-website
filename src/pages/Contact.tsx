@@ -51,7 +51,7 @@ export function ContactPage() {
             </p>
             <div className="mt-5 space-y-3 text-sm leading-7 text-deepsea/76 lining-nums">
               <p className="font-semibold text-deepsea">
-                AUDEX LOGISTIC LABS PRIVATE LIMITED
+                Audex LOGISTIC LABS PRIVATE LIMITED
               </p>
               <p>mitesh@audexglobal.com</p>
               <p>vishwesh_p@audexglobal.com</p>

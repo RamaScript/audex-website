@@ -68,7 +68,7 @@ const kpis = [
     icon: BarChart3,
     value: 3,
     suffix: 'x',
-    label: 'ROI on AUDEx Deployment',
+    label: 'ROI on Audex Deployment',
     detail: 'Measured within first 6–12 months',
     barColor: 'bg-blue',
     barWidth: '75%',

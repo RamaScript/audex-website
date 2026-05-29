@@ -44,7 +44,7 @@ export function Logo({ variant = 'dark' }: LogoProps) {
             variant === 'light' ? 'text-white' : 'text-[var(--color-navy)]'
           }`}
         >
-          AUDEX
+          Audex
         </span>
       ) : null}
     </div>

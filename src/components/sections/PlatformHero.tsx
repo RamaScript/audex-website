@@ -65,7 +65,7 @@ export function PlatformHero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mx-auto mt-7 max-w-2xl text-[16px] leading-relaxed text-deepsea/80 font-body"
           >
-            AUDEx connects global supply chain visibility with autonomous control layers —
+            Audex connects global supply chain visibility with autonomous control layers —
             transforming raw logistics data into measurable margin recovery for enterprise operations.
           </motion.p>
 

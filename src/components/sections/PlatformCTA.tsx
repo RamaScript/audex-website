@@ -40,7 +40,7 @@ export function PlatformCTA() {
 
           {/* Sub */}
           <p className="mx-auto mb-12 max-w-xl text-[15px] leading-relaxed text-white/50">
-            Join the strategic intelligence layer. Deploy AUDEx to unify your fragmented systems into a single source of operational truth.
+            Join the strategic intelligence layer. Deploy Audex to unify your fragmented systems into a single source of operational truth.
           </p>
 
           {/* CTAs */}
