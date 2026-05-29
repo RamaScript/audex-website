@@ -73,7 +73,7 @@ const categories = [
 
 export function ClientsPage() {
   useDocumentMeta(
-    "Our Clients | Audex",
+    "Clients Served Till Now | Audex",
     "Trusted by industry leaders in logistics and discrete manufacturing.",
   );
 
@@ -100,8 +100,8 @@ export function ClientsPage() {
             transition={{ duration: 0.55, delay: 0.05 }}
             className="mt-8 max-w-4xl mx-auto font-display text-[42px] font-light leading-tight tracking-[-0.04em] text-deepsea sm:text-[56px] lg:text-[72px]"
           >
-            Our{" "}
-            <span className="font-bold text-[var(--color-blue)]">Clients</span>
+            <span className="font-bold">Clients Served</span>{" "}
+            <span className="font-bold text-[var(--color-blue)]">Till Now</span>
           </motion.h1>
 
           <motion.p

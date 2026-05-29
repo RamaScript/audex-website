@@ -10,7 +10,6 @@ import { IntelligenceCenterPage } from '../pages/IntelligenceCenter'
 import { ArticleReaderPage } from '../pages/ArticleReader'
 import { NotFoundPage } from '../pages/NotFound'
 import { PlatformPage } from '../pages/Platform'
-import { ClientsPage } from '../pages/Clients'
 
 function ScrollToTop() {
   const location = useLocation()
@@ -37,7 +36,6 @@ export function AppRoutes() {
             path="/intelligence-center"
             element={<IntelligenceCenterPage />}
           />
-          <Route path="/clients" element={<ClientsPage />} />
           <Route path="/insights/:id" element={<ArticleReaderPage />} />
           <Route path="/case-studies/:id" element={<ArticleReaderPage />} />
           <Route path="/contact" element={<ContactPage />} />

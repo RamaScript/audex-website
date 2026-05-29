@@ -180,7 +180,7 @@ export function PlatformPage() {
             className="mt-6 w-full overflow-hidden rounded-t-2xl shadow-[0_-8px_40px_rgba(6,11,52,0.1)]"
             style={{ background: 'linear-gradient(150deg, #060B34 0%, #0b1858 55%, #04143e 100%)' }}
           >
-            <div className="relative w-full" style={{ aspectRatio: '21/9' }}>
+            <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[21/9]">
               {/* World map — visible on dark bg */}
               <img
                 alt="Global logistics network map"

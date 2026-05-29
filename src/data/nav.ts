@@ -5,6 +5,6 @@ export const navigationItems = [
   { label: 'Consulting', href: '/consulting' },
   { label: 'Industries', href: '/industries' },
   { label: 'Intelligence Center', href: '/intelligence-center' },
-  { label: 'Clients', href: '/clients' },
+
   { label: 'Contact', href: '/contact' },
 ]
