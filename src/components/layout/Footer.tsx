@@ -67,14 +67,14 @@ export function Footer() {
                 <p>Development office: A6 3rd floor, PM towers, Chennai-600089</p>
               </div>
             </div>
-            <a
+            {/* <a
               href="https://www.audexglobal.com"
               target="_blank"
               rel="noreferrer"
               className="inline-flex text-deepsea transition hover:text-[var(--color-blue)]"
             >
               www.audexglobal.com
-            </a>
+            </a> */}
           </div>
         </div>
       </Container>

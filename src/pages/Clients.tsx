@@ -44,7 +44,29 @@ const logisticsClients = [
   ),
 ];
 
+const majorClients = [
+  getImageUrl("/media/images/clients/major/Zeven_Logo-602897687.jpg"),
+  getImageUrl("/media/images/clients/major/raymond-logo.png"),
+  getImageUrl("/media/images/clients/major/Landmark-Group1.png"),
+  getImageUrl("/media/images/clients/major/thelogisticshub.png"),
+  getImageUrl("/media/images/clients/major/sttva.png"),
+  getImageUrl("/media/images/clients/major/stp.png"),
+  getImageUrl("/media/images/clients/major/allcargo.png"),
+  getImageUrl("/media/images/clients/major/vishrutha.png"),
+  getImageUrl("/media/images/clients/major/lalaji.png"),
+  getImageUrl("/media/images/clients/major/afcons.png"),
+  getImageUrl("/media/images/clients/major/punj.png"),
+  getImageUrl("/media/images/clients/major/nectarsys.png"),
+  getImageUrl("/media/images/clients/major/healthium.png"),
+  getImageUrl("/media/images/clients/major/sanco.png"),
+  getImageUrl("/media/images/clients/major/sical.png"),
+  getImageUrl("/media/images/clients/major/indoarya.png"),
+  getImageUrl("/media/images/clients/major/DRL.png"),
+  getImageUrl("/media/images/clients/major/is.png"),
+];
+
 const categories = [
+  { title: "Major Clients", clients: majorClients },
   { title: "Discrete Manufacturing", clients: discreteClients },
   { title: "Logistics Services", clients: logisticsClients },
 ];
@@ -98,7 +120,7 @@ export function ClientsPage() {
       {/* ── Client Categories ── */}
       <section className="py-24">
         <Container>
-          <div className="grid gap-16 md:grid-cols-2">
+          <div className="grid gap-16 md:grid-cols-3">
             {categories.map((category, idx) => (
               <motion.div
                 key={category.title}
@@ -116,7 +138,7 @@ export function ClientsPage() {
                 </div>
 
                 {/* Clients Grid (styled beautifully with a subtle minty/light-blue background to echo the provided design but keeping it premium) */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-8 bg-[#f0f9f6] border border-deepsea/5 rounded-b-[2px] h-full shadow-inner">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-8 bg-[#f0f9f6] border border-deepsea/5 rounded-b-[2px] shadow-inner">
                   {category.clients.map((logo, index) => (
                     <motion.div
                       key={index}
